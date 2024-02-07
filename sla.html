@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        var confirm=true;
+        $("#btn1").click(function(){
+            $("h1").html("me clicou");
+        });
+        
+        $("#btn2").click(function(){
+            $("#img1").hide();
+            $("#img1").css("border-radius", "0");
+            if(confirm == false){red}
+            confirm = false;
+            
+        });
+        $("#btn3").click(function(){
+            if(confirm == true){
+                $("#img1").css("border-radius", "10px");
+                
+            }
+            else{
+                $("#img1").show();
+                confirm = true;
+            }
+        })
+
+
+    });
+</script>
+
+<body>
+    <div>
+        <button id="btn1">click</button>
+        <h1></h1>    
+    </div>
+
+    <div>
+        <img src="img1.png" alt="img"  id="img1">
+
+        <button id="btn2">ocultar</button>
+        <button id="btn3">exibir</button>
+        
+
+
+
+    </div>
+
+</body>
+</html>
