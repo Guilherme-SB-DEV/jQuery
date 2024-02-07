@@ -15,7 +15,7 @@
         });
         
         $("#btn2").click(function(){
-            $("#img1").hide();
+            $("#img1").slideUp();
             $("#img1").css("border-radius", "0");
             if(confirm == false){red}
             confirm = false;
@@ -27,7 +27,7 @@
                 
             }
             else{
-                $("#img1").show();
+                $("#img1").slideDown();
                 confirm = true;
             }
         })
